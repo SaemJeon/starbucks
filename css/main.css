@@ -33,7 +33,7 @@ header .logo {
   height: 75px;
   top: 0;
   bottom: 0;
-  left: 0;
+  left: 20px;
   margin: auto 0;
   position: absolute;
 }
@@ -42,6 +42,7 @@ header .sub-menu {
   position: absolute;
   right: 0px;
   top: 10px;
+  display: flex;
 }
 
 header .sub-menu ul.menu {
@@ -68,7 +69,7 @@ header .sub-menu ul.menu li:first-child:before {
 }
 
 header .sub-menu ul.menu li a {
-  font-size: 12px;
+  font-size: 13px;
   color: #555;
   padding: 11px 16px;
   display: block;
@@ -76,6 +77,38 @@ header .sub-menu ul.menu li a {
 
 header .sub-menu ul.menu li a:hover{
   text-decoration: underline;
+}
+
+header .sub-menu .search {
+  height: 34px;
+  position: relative;
+}
+
+header .sub-menu .search input {
+  width: 34px;
+  height: 34px;
+  padding: 4px 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 5px;
+  outline: none;
+  color: #777;
+  font-size: 12px;
+  transition: width 0.4s;
+}
+
+header .sub-menu .search input:focus {
+  width: 190px;
+}
+
+header .sub-menu .search .material-icons {
+  height: 24px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 5px;
 }
 
 header .main-menu {}
