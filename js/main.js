@@ -12,3 +12,11 @@ searchInputEl.addEventListener("focus", () => {
 searchInputEl.addEventListener("blur", () => {
   searchInputEl.setAttribute("placeholder", "");
 });
+
+const fadeInEls = document.querySelectorAll(".fade-in");
+fadeInEls.forEach((fadeInEl, index) => {
+  gsap.to(fadeInEl, {
+    opacity: 1,
+    delay: (index + 1) * 0.7,
+  });
+});
