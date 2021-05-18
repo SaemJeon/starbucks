@@ -19,6 +19,9 @@
   <!-- gsap -->
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous"></script>
 
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script defer src="./js/main.js"></script>
 </head>
 
@@ -423,7 +426,29 @@
   </section>
 
   <!-- notice -->
-  <section class="notice"></section>
+  <section class="notice">
+    <div class="bg-left"></div>
+    <div class="bg-right"></div>
+    <div class="inner">
+      <div class="inner-left">
+        <h2>공지사항</h2>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">시스템 개선 및 점검 안내</div>
+            <div class="swiper-slide">Tmap 스타벅스 음성주문 서비스 제휴 종료 안내</div>
+            <div class="swiper-slide">스타벅스 애플리케이션 iOS 21.1.0에서의 오류 발생 안내</div>
+            <div class="swiper-slide">Delivers 서비스 이용 약관 개정 안내</div>
+            <div class="swiper-slide">개인정보 처리방침 개정 안내</div>
+          </div>
+        </div>
+        <a href="javascript:void(0)" class="material-icons">add_circle_outline</a>
+      </div>
+      <div class="inner-right">
+        <h2>스타벅스 프로모션</h2>
+        <div class="material-icons">expand_more</div>
+      </div>
+    </div>
+  </section>
 </body>
 
 </html>

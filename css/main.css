@@ -247,7 +247,7 @@ header .main-menu .item .item__contents .contents__description p {
 
 header .floating {
   position: fixed;
-  top:154px;
+  top: 154px;
   right: 20px;
   z-index: 9;
 }
@@ -314,3 +314,90 @@ header .floating {
   left: 20px;
 }
 
+/* notice */
+.notice {
+  position: relative;
+}
+
+.notice .bg-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #111111;
+  height: 100%;
+  width: 50%;
+}
+
+.notice .bg-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #f6f5ef;
+  height: 100%;
+  width: 50%;
+}
+
+.notice .inner {
+  height: 62px;
+  display: flex;
+}
+
+.notice .inner-left {
+  background-color: #111111;
+  height: 100%;
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+
+.notice .inner-left h2 {
+  color: #fff;
+  margin-right: 20px;
+  font-weight: 700;
+  font-size: 17px;
+  padding-left: 20px;
+}
+
+.notice .inner-left .swiper-container {
+  height: 62px;
+  flex-grow: 1;
+}
+
+.notice .inner-left .swiper-slide {
+  height: 62px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.notice .inner-left .swiper-slide:hover {
+  text-decoration: underline;
+}
+
+.notice .inner-left .material-icons {
+  color: #fff;
+  padding: 15px;
+  font-size: 34px;
+}
+
+.notice .inner-right {
+  padding-left: 100px;
+  background-color: #f6f5ef;
+  height: 100%;
+  width: 40%;
+  right: 0;
+  display: flex;
+  align-items: center;
+}
+
+.notice .inner-right h2 {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.notice .inner-right .material-icons {
+  font-size: 34px;
+  padding-left: 50px;
+  cursor: pointer;
+}

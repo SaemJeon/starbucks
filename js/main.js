@@ -20,3 +20,9 @@ fadeInEls.forEach((fadeInEl, index) => {
     delay: (index + 1) * 0.7,
   });
 });
+
+new Swiper(".notice .swiper-container", {
+  direction: "vertical",
+  loop: true,
+  autoplay: true,
+});
