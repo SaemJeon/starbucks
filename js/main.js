@@ -54,3 +54,18 @@ promoButton.addEventListener("click", () => {
     promotionEl.classList.remove("hide");
   }
 });
+
+const seasonalPhoto = document.querySelector(".seasonal .photo");
+const seasonalText = document.querySelector(".seasonal .text-box");
+gsap.from(seasonalPhoto, {
+  x: -800,
+  opacity: 0,
+  duration: 1.5,
+  ease: "power1.out",
+});
+gsap.from(seasonalText, {
+  x: 800,
+  opacity: 0,
+  duration: 1.8,
+  ease: "power1.out",
+});
