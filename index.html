@@ -17,7 +17,9 @@
   <link rel="stylesheet" href="./css/main.css">
 
   <!-- gsap -->
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+    integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+    crossorigin="anonymous"></script>
 
   <!-- swiper -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
@@ -410,7 +412,7 @@
       <div class="fade-in">
         <img src="./images/2021_summer1_coldbrew.png" alt="" class="drink1">
         <img src="./images/2021_summer1_coldbrew_title.png" alt="" class="title1">
-      </div>      
+      </div>
       <div class="fade-in">
         <img src="./images/2021_summer1_blended.png" alt="" class="drink2">
         <img src="./images/2021_summer1_blended_title.png" alt="" class="title2">
@@ -427,25 +429,83 @@
 
   <!-- notice -->
   <section class="notice">
-    <div class="bg-left"></div>
-    <div class="bg-right"></div>
-    <div class="inner">
-      <div class="inner-left">
-        <h2>공지사항</h2>
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">시스템 개선 및 점검 안내</div>
-            <div class="swiper-slide">Tmap 스타벅스 음성주문 서비스 제휴 종료 안내</div>
-            <div class="swiper-slide">스타벅스 애플리케이션 iOS 21.1.0에서의 오류 발생 안내</div>
-            <div class="swiper-slide">Delivers 서비스 이용 약관 개정 안내</div>
-            <div class="swiper-slide">개인정보 처리방침 개정 안내</div>
+    <div class="notice-line">
+      <div class="bg-left"></div>
+      <div class="bg-right"></div>
+      <div class="inner">
+        <div class="inner-left">
+          <h2>공지사항</h2>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">시스템 개선 및 점검 안내</div>
+              <div class="swiper-slide">Tmap 스타벅스 음성주문 서비스 제휴 종료 안내</div>
+              <div class="swiper-slide">스타벅스 애플리케이션 iOS 21.1.0에서의 오류 발생 안내</div>
+              <div class="swiper-slide">Delivers 서비스 이용 약관 개정 안내</div>
+              <div class="swiper-slide">개인정보 처리방침 개정 안내</div>
+            </div>
+          </div>
+          <a href="javascript:void(0)" class="material-icons">add_circle_outline</a>
+        </div>
+        <div class="inner-right">
+          <h2>스타벅스 프로모션</h2>
+          <img src="./images/btn_prom_down.png" alt="" class="promo-expand">
+        </div>
+      </div>
+    </div>
+    <div class="promotion hide">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./images/promotion1.jpg" alt="">
+            <div class="btn btn-dark">자세히 보기</div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/promotion2.jpg" alt="">
+            <div class="btn btn-dark">자세히 보기</div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/promotion3.jpg" alt="">
+            <div class="btn btn-dark">자세히 보기</div>
           </div>
         </div>
-        <a href="javascript:void(0)" class="material-icons">add_circle_outline</a>
       </div>
-      <div class="inner-right">
-        <h2>스타벅스 프로모션</h2>
-        <div class="material-icons">expand_more</div>
+      <div class="swiper-prev">
+        <div class="material-icons">arrow_back_ios_new</div>
+      </div>
+      <div class="swiper-next">
+        <div class="material-icons">arrow_forward_ios</div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <!-- rewards -->
+  <section class="rewards">
+    <div class="inner">
+      <img src="./images/rewards-logo.png" alt="" class="logo">
+      <div class="text">
+        <div class="info">
+          <h2>스타벅스만의 특별한 혜택, 스타벅스 리워드</h2>
+          <div class="check-rewards">
+            <p>
+              스타벅스 회원이세요? 로그인을 통해 나만의 리워드를 확인해 보세요.<br>
+              스타벅스 회원이 아니세요? 가입을 통해 리워드 혜택을 즐기세요.
+            </p>
+            <div class="buttons">
+              <div class="btn btn-green sign-up">회원가입</div>
+              <div class="btn btn-clear login">로그인</div>
+            </div>
+          </div>
+          <div class="line"></div>
+        </div>
+        <div class="e-gift">
+          <p>
+            회원 가입 후, 스타벅스 e-Gift Card를 "나에게 선물하기"로 구매하시고, 편리하게 등록하세요!
+            <br>
+            카드를 등록하여 스타벅스 리워드 회원이 되신 후, 첫 구매를 하시면 무료 음료쿠폰을 드립니다!
+          </p>
+          <div class="btn btn-clear gift">e-Gift Card 선물하기</div>
+        </div>
       </div>
     </div>
   </section>
