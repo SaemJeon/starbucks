@@ -69,3 +69,12 @@ gsap.from(seasonalText, {
   duration: 1.8,
   ease: "power1.out",
 });
+
+const exploreEl = document.querySelector(".explore");
+const exploreImageEl = document.querySelector(".explore .image");
+exploreEl.addEventListener("mouseenter", () => {
+  exploreImageEl.classList.add("hover");
+});
+exploreEl.addEventListener("mouseleave", () => {
+  exploreImageEl.classList.remove("hover");
+});
