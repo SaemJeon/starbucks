@@ -78,3 +78,21 @@ exploreEl.addEventListener("mouseenter", () => {
 exploreEl.addEventListener("mouseleave", () => {
   exploreImageEl.classList.remove("hover");
 });
+
+const magazineText = document.querySelector(".magazine .text");
+const magazineExplore = document.querySelector(".magazine .explore");
+gsap.from(magazineText, {
+  x: 800,
+  duration: 1.5,
+  ease: "power1.out",
+});
+gsap.from(magazineExplore, {
+  x: 800,
+  opacity: 0,
+  duration: 1.5,
+  ease: "power1.out",
+  delay: 0.3,
+});
+
+const date = document.querySelector(".copyright .date");
+date.textContent = new Date().getFullYear();

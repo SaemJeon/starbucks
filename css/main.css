@@ -5,7 +5,6 @@ body {
   font-weight: 400;
   line-height: 1.4;
   font-family: 'Nanum Gothic', sans-serif;
-  height: 7000px;
 }
 
 .inner {
@@ -42,7 +41,7 @@ img {
 }
 
 .btn-dark:hover {
-  background-color: #111;
+  background-color: #2C2A29;
   color: #fff;
 }
 
@@ -703,7 +702,30 @@ background-color: #1e3932;
 /* magazine */
 .magazine {
   background-color: #fff;
+}
+
+.magazine .inner {
   height: 650px;
+}
+
+.magazine .inner::before {
+  content: "";
+  position: absolute;
+  top: 63%;
+  left: 9.5%;
+  width: 100%;
+  height: 1px;
+  background-color: #cccccb;
+}
+
+.magazine .inner::after {
+  content: "";
+  position: absolute;
+  left: 48%;
+  top: 120px;
+  width: 1px;
+  height: 70%;
+  background-color: #cccccb;
 }
 
 .magazine .picture {
@@ -745,21 +767,180 @@ background-color: #1e3932;
   background-position: bottom;
 }
 
-.magazine .horizontal-line {
-  position: absolute;
-  z-index: -1;
-  top: 410px;
-  width: 1500px;
-  height: 1px;
-  background-color: rgb(223, 221, 221);
+/* store */
+.store {
+  background-image: url("../images/store_bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
 }
 
-.magazine .vertical-line {
+.store .inner {
+  height: 400px;
+}
+
+.store .images .picture1 {
   position: absolute;
-  z-index: -1;
-  top: 120px;
-  left: 550px;
+  top: 149px;
+  left: 390px;
+  z-index: 1;
+}
+
+.store .images .picture2 {
+  position: absolute;
+  top: 0;
+  left: 160px;
+}
+
+.store .images .picture3 {
+  position: absolute;
+  top: -60px;
+  left: 520px;
+}
+
+.store .images .picture4 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.store .text-box {
+  position: absolute;
+  top: 100px;
+  right: 50px;
+}
+
+.store .text-box .text {
+  margin-bottom: 15px;
+}
+
+.store .text-box .btn {
+  margin-top: 20px;
+}
+
+/* footer */
+footer {
+  background-color: #2C2A29;
+}
+
+footer .menu .inner {
+  display: flex;
+  padding: 20px 0 40px 20px;
+  color: #fff;
+}
+
+footer .menu .menu-list {
+  width: 195px;
+}
+
+footer .menu .menu-list .menu__name {
+  margin: 20px 0;
+  font-size: 14px;
+}
+
+footer .menu .menu-list .menu__name:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+footer .menu .menu-list li {
+  height: 24px;
+  margin: auto;
+  font-size: 12px;
+}
+
+footer .menu .menu-list li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+footer .awards {
+  background-color: #282828;
+  height: 80px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+footer .awards .inner {
+  display: flex;
+}
+
+footer .awards .inner img {
+  height: 40px;
+}
+
+footer .copyright {
+  padding: 20px 80px 40px;
+}
+
+footer .copyright .menu ul {
+  display: flex;
+  position: relative;
+}
+
+footer .copyright .menu ul>li a {
+  font-size: 12px;
+  color: #999;
+  padding: 11px 11px;
+  position: relative;
+}
+
+footer .copyright .menu ul>li a:hover {
+  text-decoration: underline;
+}
+
+footer .copyright .menu ul>li::before {
+  content: "";
+  height: 12px;
   width: 1px;
-  height: 450px;
-  background-color: rgb(223, 221, 221);
+  background-color: #999;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+footer .copyright .menu ul>li:first-child:before {
+  display: none;
+}
+
+footer .copyright .menu ul>li:first-child a {
+  color: #00B050;
+}
+
+footer .buttons {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+footer .buttons .btn {
+  margin: 10px 5px 20px;
+}
+
+footer .buttons .btn:hover {
+  color: #fff;
+  background-color: transparent;
+}
+
+footer .copy-menu ul {
+  display: flex;
+  justify-content: center;
+}
+
+footer .copy-menu ul>li {
+  color: #999;
+  font-size: 12px;
+  padding: 5px;
+}
+
+footer .right {
+  text-align: center;
+  margin-top: 10px;
+}
+
+footer .right p {
+  color: #999;
+  font-size: 12px;
 }
